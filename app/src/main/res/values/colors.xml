@@ -2,4 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="green">#669933</color>
+    <color name="red">#F52532</color>
+    <color name="darkred">#A31F00</color>
+    <color name="darkerred">#6F1000</color>
+    <color name="orange">#FFA500</color>
+    <color name="darkorange">#DF7200</color>
+    <color name="darkyellow">#F4A200</color>
+    <color name="yellow">#FAD749</color>
+    <color name="gold">#F6CF0F</color>
+    <color name="lighttan">#ECD2A1</color>
+    <color name="mediumtan">#D59264</color>
+    <color name="darktan">#A34B33</color>
 </resources>
