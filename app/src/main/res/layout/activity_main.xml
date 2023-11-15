@@ -7,12 +7,12 @@
     android:gravity="center"
     android:orientation="vertical"
     android:background="@color/green"
-    tools:context=".MainActivity">
+    tools:context=".MainMenuActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/ArcadeFont"
+        android:fontFamily="@font/arcadefont"
         android:text="Fire Runner"
         android:textSize="25dp"
         android:textColor="@color/darkerred"
@@ -23,28 +23,28 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:fontFamily="@font/ArcadeFont"
+        android:fontFamily="@font/arcadefont"
         android:text="Start Game"
         android:textColor="@color/darkerred"
         android:background="@drawable/rectangle_buttons"
         android:id="@+id/start_button"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:fontFamily="@font/ArcadeFont"
+        android:fontFamily="@font/arcadefont"
         android:text="Settings"
         android:textColor="@color/darkerred"
         android:background="@drawable/rectangle_buttons"
         android:id="@+id/settings_button"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:fontFamily="@font/ArcadeFont"
+        android:fontFamily="@font/arcadefont"
         android:text="Quit Game"
         android:textColor="@color/darkerred"
         android:background="@drawable/rectangle_buttons"

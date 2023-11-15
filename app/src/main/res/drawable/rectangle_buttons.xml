@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/orange" /> <!-- Define your button color here -->
-    <corners android:radius="0dp"/> <!-- Set radius to 0dp for sharp corners -->
+    <!-- Transparent background color -->
+    <solid android:color="#FFA500"/>
+
+    <!-- Optional: Define a stroke if you want a border -->
+    <stroke
+        android:width="2dp"
+        android:color="#FF3700B3"/>
+
+    <!-- Set the corner radius to 0dp for sharp corners -->
+    <corners android:radius="0dp"/>
 </shape>
