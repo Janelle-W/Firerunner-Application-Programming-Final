@@ -6,15 +6,20 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/green"
+    android:background="#3D833C"
     tools:context=".MainMenuActivity">
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="153dp"
+        android:src="@drawable/pixel_fire" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/arcadefont"
         android:text="Fire Runner"
-        android:textSize="25dp"
+        android:textSize="30dp"
         android:textColor="@color/darkerred"
         android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,32 +27,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:layout_width="160dp"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:fontFamily="@font/arcadefont"
+        android:padding="17dp"
+        android:layout_margin="30dp"
         android:text="Start Game"
+        android:fontFamily="@font/arcadefont"
         android:textColor="@color/darkerred"
-        android:background="@drawable/rectangle_buttons"
+        android:clickable="true"
+        android:background="@drawable/rectangle_button"
         android:id="@+id/start_button"/>
-    <Button
-        android:layout_width="130dp"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:fontFamily="@font/arcadefont"
+        android:padding="17dp"
+        android:layout_margin="10dp"
         android:text="Settings"
-        android:textColor="@color/darkerred"
-        android:background="@drawable/rectangle_buttons"
-        android:id="@+id/settings_button"/>
-    <Button
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
         android:fontFamily="@font/arcadefont"
-        android:text="Quit Game"
         android:textColor="@color/darkerred"
-        android:background="@drawable/rectangle_buttons"
+        android:clickable="true"
+        android:background="@drawable/rectangle_button"
+        android:id="@+id/settings_button"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="17dp"
+        android:layout_margin="30dp"
+        android:text="Quit Game"
+        android:fontFamily="@font/arcadefont"
+        android:textColor="@color/darkerred"
+        android:clickable="true"
+        android:background="@drawable/rectangle_button"
         android:id="@+id/quit_button"/>
 
 </LinearLayout>
