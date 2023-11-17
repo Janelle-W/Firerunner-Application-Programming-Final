@@ -14,4 +14,5 @@
     <color name="lighttan">#ECD2A1</color>
     <color name="mediumtan">#D59264</color>
     <color name="darktan">#A34B33</color>
+    <color name="app_background_color">#4E8144</color>
 </resources>
