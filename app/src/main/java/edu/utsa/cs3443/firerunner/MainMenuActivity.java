@@ -22,15 +22,15 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
 
         TextView clickedButton = (TextView) view;
         String buttonText = clickedButton.getText().toString().toLowerCase();
-        if(buttonText.equalsIgnoreCase("start game")){
+        /*if(buttonText.equalsIgnoreCase("start game")){
             Intent gameIntent = new Intent(MainMenuActivity.this, GameActivity.class);
             startActivity(gameIntent);
-        }
+        }*/
         if (buttonText.equalsIgnoreCase("settings")){
             Intent settingsIntent = new Intent(MainMenuActivity.this, SettingsActivity.class);
             startActivity(settingsIntent);
         }
-        if (buttonText.equalsIgnoreCase("quit game")) {
+        else if (buttonText.equalsIgnoreCase("quit game")) {
             finish(); //Finish the current activity
             System.exit(0); //Terminate the app's process
         }
