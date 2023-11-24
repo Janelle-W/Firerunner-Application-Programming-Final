@@ -1,0 +1,551 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="?android:attr/windowBackground"
+    tools:context=".GameEasyActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/arcadefont"
+        android:text="LEVEL 3 - HARD"
+        android:textColor="@color/darkerred"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/button_11"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_13"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_14"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_15"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_16"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_17"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/button_21"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_22"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_23"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_24"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_25"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_26"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_27"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/button_31"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_32"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_33"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_34"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_35"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_36"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_37"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/button_41"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_42"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_43"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_44"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_45"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_46"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_47"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/button_51"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_52"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_53"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_54"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_55"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_56"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_57"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/button_61"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_62"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_63"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_64"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_65"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_66"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_67"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/button_71"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_72"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_73"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_74"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_75"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/fire5"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_76"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/fire5"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_77"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/fire5"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/button_81"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_82"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_83"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_84"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_85"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tree2"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_86"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/fire5"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+        <ImageButton
+            android:id="@+id/button_87"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/fire5"
+            android:backgroundTint="#446917"
+            android:textColor="#A31F00"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/button_water"
+            android:layout_width="186dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#446917"
+            android:src="@drawable/water3"
+            android:textColor="#A31F00" />
+    </LinearLayout>
+</LinearLayout>
