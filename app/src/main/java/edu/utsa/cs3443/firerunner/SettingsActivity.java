@@ -35,6 +35,7 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void navigateToMainMenuActivity() {
+
         finish();
     }
 }
