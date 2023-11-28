@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
+
 import edu.utsa.cs3443.firerunner.model.BackgroundMusicPlayer;
 
 
@@ -29,8 +32,8 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
         TextView clickedButton = (TextView) view;
         String buttonText = clickedButton.getText().toString().toLowerCase();
         if(buttonText.equalsIgnoreCase("start game")){
-            Intent gameIntent = new Intent(MainMenuActivity.this, GameEasyActivity.class);
-            startActivity(gameIntent);
+            TextView startGame = findViewById(R.id.start_button);
+            startGame.setOnClickListener(v -> startLoadingScreen("start"));
         }
         if (buttonText.equalsIgnoreCase("settings")){
             Intent settingsIntent = new Intent(MainMenuActivity.this, SettingsActivity.class);
@@ -57,6 +60,12 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
     protected void onDestroy() {
         // Don't stop the music here; let it continue for other activities
         super.onDestroy();
+    }
+
+    private void startLoadingScreen(String difficulty) {
+        Intent intent = new Intent(MainMenuActivity.this, LoadingActivity.class);
+        intent.putExtra("difficulty", difficulty);
+        startActivity(intent);
     }
 
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#669933</color>
+    <color name="red">#F52532</color>
+    <color name="darkred">#A31F00</color>
+    <color name="darkerred">#6F1000</color>
+    <color name="orange">#EF7F01</color>
+    <color name="darkorange">#DF7200</color>
+    <color name="darkyellow">#F4A200</color>
+    <color name="yellow">#FAD749</color>
+    <color name="gold">#F6CF0F</color>
+    <color name="lighttan">#ECD2A1</color>
+    <color name="mediumtan">#D59264</color>
+    <color name="darktan">#A34B33</color>
+    <color name="medgreen">#588133</color>
+    <color name="lime">#ADBD37</color>
+    <color name="paper">#F4EBDA</color>
+    <color name="leather">#B9893E</color>
+    <color name="brown">#44341B</color>
+    <color name="skyblue">#0BB5FB</color>
+    <color name="darkgreen">#446917</color>
+    <color name="reen">#3D833C
+    </color>
+
+
+
+</resources>

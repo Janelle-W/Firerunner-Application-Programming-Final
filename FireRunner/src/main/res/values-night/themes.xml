@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Common application theme for both day and night modes. -->
+    <style name="Base.Theme.FireRunner" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your common theme here. -->
+        <item name="android:windowBackground">@color/my_night_background_color</item>
+    </style>
+
+    <!-- Night mode theme -->
+    <style name="Theme.FireRunner_Night" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your night theme here if needed -->
+        <item name="android:windowBackground">@color/my_night_background_color</item>
+    </style>
+</resources>
