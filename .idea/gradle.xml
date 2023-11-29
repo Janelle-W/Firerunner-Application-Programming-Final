@@ -12,6 +12,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appChris" />
+            <option value="$PROJECT_DIR$/firerunnerChris" />
+            <option value="$PROJECT_DIR$/janelle" />
           </set>
         </option>
       </GradleProjectSettings>

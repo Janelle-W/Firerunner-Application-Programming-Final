@@ -91,7 +91,7 @@ public class SettingsActivity extends NightActivity {
         intent.putExtra("difficulty", difficulty);
         startActivity(intent);
     }
-    private void navigateToGameEasyActivity() {
+    /*private void navigateToGameEasyActivity() {
         Intent gameIntent = new Intent(SettingsActivity.this, LoadingActivity.class);
         startActivity(gameIntent);
     }
@@ -104,7 +104,7 @@ public class SettingsActivity extends NightActivity {
     private void navigateToGameHardActivity() {
         Intent gamehardIntent = new Intent(SettingsActivity.this, LoadingActivity.class);
         startActivity(gamehardIntent);
-    }
+    }*/
 
     @Override
     protected void onDestroy() {

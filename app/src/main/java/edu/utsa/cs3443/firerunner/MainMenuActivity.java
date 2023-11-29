@@ -32,8 +32,9 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
         TextView clickedButton = (TextView) view;
         String buttonText = clickedButton.getText().toString().toLowerCase();
         if(buttonText.equalsIgnoreCase("start game")){
-            TextView startGame = findViewById(R.id.start_button);
-            startGame.setOnClickListener(v -> startLoadingScreen("start"));
+            //TextView startGame = findViewById(R.id.start_button);
+            //startGame.setOnClickListener(v -> startLoadingScreen("start"));
+            startLoadingScreen("start");
         }
         if (buttonText.equalsIgnoreCase("settings")){
             Intent settingsIntent = new Intent(MainMenuActivity.this, SettingsActivity.class);

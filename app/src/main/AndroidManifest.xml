@@ -13,8 +13,12 @@
         android:theme="@style/Base.Theme.FireRunner"
         tools:targetApi="31">
         <activity
-            android:name=".LoadingActivity"
+            android:name=".LossActivity"
             android:exported="false" />
+        <activity
+            android:name=".LoadingActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.FireRunner" />
         <activity
             android:name=".SettingsActivity"
             android:exported="true"
@@ -45,7 +49,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
