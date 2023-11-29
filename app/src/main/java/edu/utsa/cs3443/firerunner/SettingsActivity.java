@@ -90,6 +90,7 @@ public class SettingsActivity extends NightActivity {
         Intent intent = new Intent(SettingsActivity.this, LoadingActivity.class);
         intent.putExtra("difficulty", difficulty);
         startActivity(intent);
+        finish();
     }
     /*private void navigateToGameEasyActivity() {
         Intent gameIntent = new Intent(SettingsActivity.this, LoadingActivity.class);

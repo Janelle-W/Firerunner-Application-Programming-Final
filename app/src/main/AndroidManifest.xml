@@ -13,8 +13,13 @@
         android:theme="@style/Base.Theme.FireRunner"
         tools:targetApi="31">
         <activity
+            android:name=".WinActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.FireRunner"/>
+        <activity
             android:name=".LossActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Base.Theme.FireRunner" />
         <activity
             android:name=".LoadingActivity"
             android:exported="false"

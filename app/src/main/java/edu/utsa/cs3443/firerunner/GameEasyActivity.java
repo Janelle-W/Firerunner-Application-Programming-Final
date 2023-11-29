@@ -82,6 +82,7 @@ public class GameEasyActivity extends AppCompatActivity implements View.OnClickL
     private void spawnFire() {
         // If game over condition is met, stop spawning fires
         if (isGameActive == false || fireCounter >= 15) {
+            checkGameOver();
             return;
         }
 
@@ -136,21 +137,19 @@ public class GameEasyActivity extends AppCompatActivity implements View.OnClickL
 
     private void checkGameOver() {
         if (fireCounter >= 15 && isGameActive) {
-            isGameActive = false; // Set game as inactive to prevent further user interaction
+            isGameActive = true;
             Intent lossintent = new Intent (GameEasyActivity.this, LossActivity.class);
             startActivity(lossintent);
-            showToast("Game Over! More than 15 fires on the screen.");
+            finish();
         }
         if (fireCounter == 0 && isGameActive) {
             isGameActive = false; // Set game as inactive to prevent further user interaction
-            gameWon();
+            Intent winIntent = new Intent(GameEasyActivity.this, WinActivity.class);
+            startActivity(winIntent);
+            finish();
             // Stop further execution of spawnFire by removing callbacks from the handler
             handler.removeCallbacks(r);
         }
-    }
-
-    private void gameWon() {
-        showToast("You Win! No fires left on the screen.");
     }
 
     private void showToast(String message) {

@@ -82,6 +82,7 @@ public class GameMediumActivity extends AppCompatActivity implements View.OnClic
     private void spawnFire() {
         // If game over condition is met, stop spawning fires
         if (isGameActive == false || fireCounter >= 15) {
+            checkGameOver();
             return;
         }
 
@@ -139,19 +140,18 @@ public class GameMediumActivity extends AppCompatActivity implements View.OnClic
             isGameActive = false; // Set game as inactive to prevent further user interaction
             Intent lossintent = new Intent (GameMediumActivity.this,LossActivity.class);
             startActivity(lossintent);
-            showToast("Game Over! More than 15 fires on the screen.");
+            finish();
         }
         if (fireCounter == 0 && isGameActive) {
             isGameActive = false; // Set game as inactive to prevent further user interaction
-            gameWon();
+            Intent winIntent = new Intent(GameMediumActivity.this, WinActivity.class);
+            startActivity(winIntent);
+            finish();
             // Stop further execution of spawnFire by removing callbacks from the handler
             handler.removeCallbacks(r);
         }
     }
 
-    private void gameWon() {
-        showToast("You Win! No fires left on the screen.");
-    }
 
     private void showToast(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();

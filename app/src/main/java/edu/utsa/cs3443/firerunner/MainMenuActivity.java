@@ -29,18 +29,23 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public void onClick(View view) {
 
-        TextView clickedButton = (TextView) view;
-        String buttonText = clickedButton.getText().toString().toLowerCase();
-        if(buttonText.equalsIgnoreCase("start game")){
+
+        int viewId = view.getId();
+
+        //TextView clickedButton = (TextView) view;
+        //String buttonText = clickedButton.getText().toString().toLowerCase();
+        if(viewId == R.id.start_button){
             //TextView startGame = findViewById(R.id.start_button);
             //startGame.setOnClickListener(v -> startLoadingScreen("start"));
             startLoadingScreen("start");
+            finish();
         }
-        if (buttonText.equalsIgnoreCase("settings")){
+        else if (viewId == R.id.settings_button){
             Intent settingsIntent = new Intent(MainMenuActivity.this, SettingsActivity.class);
             startActivity(settingsIntent);
+            finish();
         }
-        if (buttonText.equalsIgnoreCase("quit game")) {
+        else if (viewId == R.id.quit_button) {
             finish(); //Finish the current activity
             System.exit(0); //Terminate the app's process
         }
