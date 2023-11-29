@@ -31,30 +31,12 @@ public class SettingsActivity extends NightActivity {
 
         TextView textViewEasy = findViewById(R.id.buttonEasy);
         textViewEasy.setOnClickListener(v -> startLoadingScreen("easy"));
-        /*textViewEasy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navigateToGameEasyActivity();
-            }
-        });*/
 
         TextView textViewMedium = findViewById(R.id.buttonMedium);
         textViewMedium.setOnClickListener(v -> startLoadingScreen("medium"));
-        /*textViewMedium.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navigateToGameMediumActivity();
-            }
-        });*/
 
         TextView textViewHard = findViewById(R.id.buttonHard);
         textViewHard.setOnClickListener(v -> startLoadingScreen("hard"));
-        /*textViewHard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navigateToGameHardActivity();
-            }
-        });*/
 
         TextView textViewNightMode = findViewById(R.id.buttonDayNight);
         textViewNightMode.setOnClickListener(new View.OnClickListener() {
@@ -83,6 +65,9 @@ public class SettingsActivity extends NightActivity {
 
 
     private void navigateToMainMenuActivity() {
+
+        Intent mainIntent = new Intent (SettingsActivity.this, MainMenuActivity.class);
+        startActivity(mainIntent);
         finish();
     }
 
@@ -92,20 +77,6 @@ public class SettingsActivity extends NightActivity {
         startActivity(intent);
         finish();
     }
-    /*private void navigateToGameEasyActivity() {
-        Intent gameIntent = new Intent(SettingsActivity.this, LoadingActivity.class);
-        startActivity(gameIntent);
-    }
-
-    private void navigateToGameMediumActivity() {
-        Intent gamemediumIntent = new Intent(SettingsActivity.this, LoadingActivity.class);
-        startActivity(gamemediumIntent);
-    }
-
-    private void navigateToGameHardActivity() {
-        Intent gamehardIntent = new Intent(SettingsActivity.this, LoadingActivity.class);
-        startActivity(gamehardIntent);
-    }*/
 
     @Override
     protected void onDestroy() {

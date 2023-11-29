@@ -9,7 +9,6 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 import androidx.core.content.ContextCompat;
 import java.util.HashSet;
 import java.util.Random;
@@ -46,7 +45,6 @@ public class GameEasyActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_gameeasy);
 
         setupButtons();
-        initializeGame();
         startGame();
     }
 
@@ -56,7 +54,9 @@ public class GameEasyActivity extends AppCompatActivity implements View.OnClickL
         textViewMainMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 navigateToMainMenuActivity();
+                finish();
             }
         });
 
@@ -67,11 +67,6 @@ public class GameEasyActivity extends AppCompatActivity implements View.OnClickL
             // Set all buttons to trees at the start
             button.setImageResource(R.drawable.tree2);
         }
-    }
-
-    private void initializeGame() {
-        // Start with 1 random fire
-        //spawnFire();
     }
 
     private void startGame() {
@@ -152,11 +147,9 @@ public class GameEasyActivity extends AppCompatActivity implements View.OnClickL
         }
     }
 
-    private void showToast(String message) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
-    }
-
     private void navigateToMainMenuActivity() {
+        Intent mainIntent = new Intent (GameEasyActivity.this, MainMenuActivity.class);
+        startActivity(mainIntent);
         finish();
     }
 }

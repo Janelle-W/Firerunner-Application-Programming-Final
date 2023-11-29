@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import edu.utsa.cs3443.firerunner.model.BackgroundMusicPlayer;
 
 
@@ -32,11 +30,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
 
         int viewId = view.getId();
 
-        //TextView clickedButton = (TextView) view;
-        //String buttonText = clickedButton.getText().toString().toLowerCase();
         if(viewId == R.id.start_button){
-            //TextView startGame = findViewById(R.id.start_button);
-            //startGame.setOnClickListener(v -> startLoadingScreen("start"));
             startLoadingScreen("start");
             finish();
         }

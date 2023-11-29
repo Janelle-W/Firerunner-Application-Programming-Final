@@ -9,7 +9,6 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 import androidx.core.content.ContextCompat;
 import java.util.HashSet;
 import java.util.Random;
@@ -46,7 +45,6 @@ public class GameMediumActivity extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.activity_gamemedium);
 
         setupButtons();
-        initializeGame();
         startGame();
     }
 
@@ -67,11 +65,6 @@ public class GameMediumActivity extends AppCompatActivity implements View.OnClic
             // Set all buttons to trees at the start
             button.setImageResource(R.drawable.tree2);
         }
-    }
-
-    private void initializeGame() {
-        // Start with 1 random fire
-        //spawnFire();
     }
 
     private void startGame() {
@@ -152,12 +145,9 @@ public class GameMediumActivity extends AppCompatActivity implements View.OnClic
         }
     }
 
-
-    private void showToast(String message) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
-    }
-
     private void navigateToMainMenuActivity() {
+        Intent mainIntent = new Intent (GameMediumActivity.this, MainMenuActivity.class);
+        startActivity(mainIntent);
         finish();
     }
 }
