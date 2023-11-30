@@ -1,3 +1,10 @@
+/**
+ * LoadActivity represents the activity that displays a loading screen.
+ *
+ * @author Diego Garcia (ici506)
+ * UTSA CS 3443 - Fire Runner Project
+ * Fall 2023
+ */
 package edu.utsa.cs3443.firerunner;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +15,11 @@ import android.os.Handler;
 
 public class LoadingActivity extends AppCompatActivity {
 
+    /**
+     * Called when the activity is first created. Sets the content view, sets up the UI.
+     *
+     * @param savedInstanceState contains the activity's previously saved state.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

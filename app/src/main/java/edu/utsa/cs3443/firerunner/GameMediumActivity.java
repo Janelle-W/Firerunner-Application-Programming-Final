@@ -1,3 +1,10 @@
+/**
+ * GameMediumActivity is a class that represents the gameplay for the medium level in Fire Runner
+ *
+ * @authors Christopher Rocha (xhs927), Ethan Doan (orw061), Janelle Wiggins (rqd886)
+ * UTSA CS 3443 - Fire Runner Project
+ * Fall 2023
+ */
 package edu.utsa.cs3443.firerunner;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +22,10 @@ import java.util.Random;
 import java.util.Set;
 
 public class GameMediumActivity extends AppCompatActivity implements View.OnClickListener {
+
+    /**
+     * Array containing the resource IDs of all buttons in the grid.
+     */
     private final int[] buttonsIDs = {
             R.id.button_11, R.id.button_12, R.id.button_13, R.id.button_14, R.id.button_15, R.id.button_16, R.id.button_17,
             R.id.button_21, R.id.button_22, R.id.button_23, R.id.button_24, R.id.button_25, R.id.button_26, R.id.button_27,
@@ -26,12 +37,34 @@ public class GameMediumActivity extends AppCompatActivity implements View.OnClic
             R.id.button_81, R.id.button_82, R.id.button_83, R.id.button_84, R.id.button_85, R.id.button_86, R.id.button_87
     };
 
+    /**
+     * Handler for scheduling tasks in the game, used for fire spawning.
+     */
     final Handler handler = new Handler();
+
+    /**
+     * Random object for generating random indices for fire spawning.
+     */
     private final Random random = new Random();
+
+    /**
+     * Set containing indices of buttons with active fires.
+     */
     private final Set<Integer> fireButtonIndexes = new HashSet<>();
+
+    /**
+     * Counter for tracking the number of active fires.
+     */
     private int fireCounter = 0;
+
+    /**
+     * Indicates whether the game is currently active.
+     */
     private boolean isGameActive = true;
 
+    /**
+     * Runnable for handling the periodic spawning of fires.
+     */
     final Runnable r = new Runnable() {
         @Override
         public void run() {
@@ -39,6 +72,11 @@ public class GameMediumActivity extends AppCompatActivity implements View.OnClic
         }
     };
 
+    /**
+     * Called when the activity is first created. Sets the content view, sets up the UI.
+     *
+     * @param savedInstanceState contains the activity's previously saved state.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +86,9 @@ public class GameMediumActivity extends AppCompatActivity implements View.OnClic
         startGame();
     }
 
+    /**
+     * Sets up buttons within the activity.
+     */
     private void setupButtons() {
         //Sets up the Back Button while in game
         TextView textViewMainMenu = findViewById(R.id.button_back);
@@ -67,11 +108,17 @@ public class GameMediumActivity extends AppCompatActivity implements View.OnClic
         }
     }
 
+    /**
+     * Starts the game by scheduling the first run of spawnFire after a delay.
+     */
     private void startGame() {
         // Schedule the first run of spawnFire after 3 seconds
         handler.postDelayed(r, 3000);
     }
 
+    /**
+     * Spawns a fire on a random tree button at regular intervals, if the game over condition is met, stops spawning fires.
+     */
     private void spawnFire() {
         // If game over condition is met, stop spawning fires
         if (isGameActive == false || fireCounter >= 15) {
@@ -89,6 +136,11 @@ public class GameMediumActivity extends AppCompatActivity implements View.OnClic
         handler.postDelayed(r, 1000);
     }
 
+    /**
+     * Handles button clicks
+     *
+     * @param view the clicked view.
+     */
     @Override
     public void onClick(View view) {
 
@@ -120,6 +172,11 @@ public class GameMediumActivity extends AppCompatActivity implements View.OnClic
         }
     }
 
+    /**
+     * Retrieves a random index representing a tree button that is not currently on fire.
+     *
+     * @return A random index representing a tree button.
+     */
     private int getRandomTreeIndex() {
         int randomIndex;
         do {
@@ -128,6 +185,9 @@ public class GameMediumActivity extends AppCompatActivity implements View.OnClic
         return randomIndex;
     }
 
+    /**
+     * Checks the game over condition and does corresponding actions.
+     */
     private void checkGameOver() {
         if (fireCounter >= 15 && isGameActive) {
             isGameActive = false; // Set game as inactive to prevent further user interaction
@@ -145,6 +205,9 @@ public class GameMediumActivity extends AppCompatActivity implements View.OnClic
         }
     }
 
+    /**
+     * Navigates to the main menu activity.
+     */
     private void navigateToMainMenuActivity() {
         Intent mainIntent = new Intent (GameMediumActivity.this, MainMenuActivity.class);
         startActivity(mainIntent);

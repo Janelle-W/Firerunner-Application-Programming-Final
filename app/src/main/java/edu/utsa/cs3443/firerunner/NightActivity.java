@@ -1,3 +1,10 @@
+/**
+ * NightActivity is a class for activities in the Fire Runner project that implements night mode functionality.
+ *
+ * @author Janelle Wiggins (rqd886)
+ * UTSA CS 3443 - Fire Runner Project
+ * Fall 2023
+ */
 package edu.utsa.cs3443.firerunner;
 
 import android.content.res.Configuration;
@@ -10,12 +17,20 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 public class NightActivity extends AppCompatActivity {
 
+    /**
+     * Called when the activity is first created. Sets the content view, sets up the UI.
+     *
+     * @param savedInstanceState contains the activity's previously saved state.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         applyNightMode();
     }
 
+    /**
+     * Applies night mode based on the device's current night mode setting.
+     */
     protected void applyNightMode() {
         int currentNightMode = getResources().getConfiguration().uiMode
                 & Configuration.UI_MODE_NIGHT_MASK;
@@ -29,7 +44,10 @@ public class NightActivity extends AppCompatActivity {
         }
     }
 
-    protected void toggleNightMode() {
+    /**
+     * Applies night mode based on the device's current night mode setting.
+     */
+    protected void toggleNightModeWithoutRecreate() {
         int currentNightMode = getResources().getConfiguration().uiMode
                 & Configuration.UI_MODE_NIGHT_MASK;
 
@@ -39,7 +57,6 @@ public class NightActivity extends AppCompatActivity {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         }
 
-        recreate();
     }
 
 }
