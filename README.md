@@ -1,5 +1,4 @@
-# Project Title
-Fire Runner
+# Fire Runner
 
 # Description
 Fire Runner is an application made by RevDev. It is a whack-a-mole inspired tapping phone game. The purpose of the game is to 
